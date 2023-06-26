@@ -1,5 +1,4 @@
 import 'package:easy_todo_app/data/colors.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class LargeButton extends StatelessWidget {
