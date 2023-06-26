@@ -2,6 +2,8 @@ import 'package:easy_todo_app/components/todo_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 
+import 'components/large_button.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -62,6 +64,20 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
+            ),
+            LargeButton(
+              text: 'ボタンだよん',
+              onPressed: () {
+                print('hell console');
+              },
+              primary: true,
+            ),
+            LargeButton(
+              text: 'ボタンだよん',
+              onPressed: () {
+                print('hell console');
+              },
+              primary: false,
             ),
           ],
         ),

@@ -5,6 +5,8 @@ abstract class AppColors {
 
   static const Color deleteRed = Color(0xFFFE4A49);
   static const Color doneGreen = Color(0xFF7BC043);
+  static const Color primary = Color.fromARGB(255, 208, 164, 213);
+  static const Color disable = Color.fromARGB(255, 127, 127, 128);
   static Color backgroundColor(BuildContext context) =>
       Theme.of(context).brightness == Brightness.light
           ? const Color(0xFFFFFFFF)
