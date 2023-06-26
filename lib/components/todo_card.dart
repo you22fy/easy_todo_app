@@ -20,7 +20,7 @@ class TodoCard extends StatelessWidget {
 
     return Container(
       height: 50,
-      color: Colors.blue,
+      color: AppColors.subBackgroundColor(context),
       child: Slidable(
         key: const ValueKey(0),
         startActionPane: ActionPane(
@@ -55,11 +55,26 @@ class TodoCard extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(genre),
-                Text(title),
+                Text(
+                  genre,
+                  style: TextStyle(
+                    color: AppColors.textColor(context),
+                  ),
+                ),
+                Text(
+                  title,
+                  style: TextStyle(
+                    color: AppColors.textColor(context),
+                  ),
+                ),
               ],
             ),
-            Text(formattedDate),
+            Text(
+              formattedDate,
+              style: TextStyle(
+                color: AppColors.textColor(context),
+              ),
+            ),
           ],
         ),
       ),
